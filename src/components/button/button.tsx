@@ -1,6 +1,8 @@
-function AppButton() {
+function AppButton({ className }: { className?: string }) {
   return (
-    <button className="w-full  max-w-sm bg-[#9499EB] uppercase tracking-wider font-semibold rounded-lg text-white text-base h-12 ">
+    <button
+      className={`${className} w-full max-w-sm uppercase tracking-wider font-bold rounded-lg text-sm h-12`}
+    >
       Learn More
     </button>
   );

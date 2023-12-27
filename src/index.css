@@ -1,5 +1,19 @@
 @tailwind base;
 @tailwind components;
+
+.button-primary {
+  @apply bg-[#9499EB] border-[#9499EB] text-white;
+}
+.button-primary:hover {
+  @apply bg-transparent border-2 text-[#9499EB];
+}
+
+.button-secondary {
+  @apply bg-white border-white text-[#9499EB];
+}
+.button-secondary:hover {
+  @apply bg-transparent border-2 text-white;
+}
 @tailwind utilities;
 
 body {
