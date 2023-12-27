@@ -1,18 +1,23 @@
-const data = [
-  {
-    plan: "Basic",
-    currency: "$",
-    amount: "19.99",
-    storage: "500 GB storage",
-    users: "2 Users Allowed",
-    send: "Send up to 3 GB",
-  },
-];
+import AppButton from "../button/button";
 
-export const AppBasicPlan = () => {
+type PlanData = {
+  plan: string;
+  currency: string;
+  amount: string;
+  storage: string;
+  users: string;
+  send: string;
+};
+export const AppPlan = ({
+  plan,
+  className,
+}: {
+  plan: PlanData[];
+  className: string;
+}) => {
   return (
-    <div className="bg-white w-[26rem] rounded-2xl max-w-xl h-[60vh]">
-      {data.map((planData, index) => (
+    <div className={`${className}`}>
+      {plan.map((planData, index) => (
         <div
           key={index}
           className="w-full flex flex-col items-center px-10 py-4"
@@ -47,6 +52,9 @@ export const AppBasicPlan = () => {
             </span>
           </div>
           <hr className="w-full font-bold mt-4" />
+          <div className="w-full my-6">
+            <AppButton></AppButton>
+          </div>
         </div>
       ))}
     </div>

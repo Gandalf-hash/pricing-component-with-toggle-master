@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AppToggleSwitch } from "./components/toggle-switch/toggle-switch";
-import { AppBasicPlan } from "./components/monthly/basic/basic-plan";
+import { AppMonthlyPlan } from "./components/monthly/monthly-plan";
 
 function App() {
   const [selectedPlan, setSelectedPlan] = useState<string>("annually");
@@ -26,7 +26,7 @@ function App() {
           />
         </div>
         <div className="mt-20">
-          <AppBasicPlan />
+          <AppMonthlyPlan />
         </div>
       </div>
     </div>
