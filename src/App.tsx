@@ -14,7 +14,7 @@ function App() {
   };
   return (
     <div className="w-full lg:max-w-6xl xl:max-w-7xl h-full mx-auto pt-12 px-6">
-      <div className="flex items-center flex-col  justify-center">
+      <div className="flex items-center flex-col justify-center">
         <div>
           <h1 className="text-4xl font-body font-bold text-legal-eagle">
             Our Pricing
